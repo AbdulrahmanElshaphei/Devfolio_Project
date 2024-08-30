@@ -1,0 +1,67 @@
+/* start Navbar & Home */
+@media (max-width: 992px) {
+    .navbar .nav-link:hover::before{
+        width: 0;
+    }
+    .nav-link.active::before{
+        width: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content h1{
+        font-size: 50px;
+    }
+    .fontdev{
+        font-size: 30px;
+    }
+}
+/* End Navbar & Home */
+
+
+
+
+/* Start About */
+@media (max-width: 768px) {
+    .card-body{
+       padding: 1.2rem 0 !important;
+    }
+    .about-content{
+        padding-top: 30px;
+    }
+    .about-me::before{
+        width: 110px;
+    }
+}
+/* End About */
+
+
+/* Start Counter */
+@media (max-width: 768px) {
+    .Counter{
+        height: 150vh;
+    }
+}
+/* End Counter */
+@media (max-width: 768px) {
+    .Testimonial{
+        height: 100vh;
+    }
+}
+
+/* start Contact */
+@media (max-width: 768px) {
+    .Contact{
+        height: 170vh;
+    }
+    .get-in::before{
+        width: 140px;
+    }
+    .send-message::before{
+        width: 195px;
+    }
+    .Contact-content{
+        padding-top: 30px;
+    }
+}
+/* End Contact */

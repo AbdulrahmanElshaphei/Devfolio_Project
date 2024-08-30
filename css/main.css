@@ -1,0 +1,391 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+   font-family:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+/* Start Nav */
+.bg-mynav{
+    background-color: rgba(0,0,0,0.9);
+    z-index: 999;
+    letter-spacing: 1px;
+}
+
+.deep-edit{
+    font-size: 14px !important;
+}
+
+.navbar .fontdev{
+    font-size: 28px;
+}
+
+.dropdown-menu a:hover{
+    color: rgb(12,110,253);
+}
+
+.dropend-menu1 a:hover{
+    color: rgb(12,110,253) !important;
+}
+
+.dropdown-menu{
+    display: none !important;
+}
+
+.dropdown:hover > .dropdown-menu , .dropend:hover > .dropdown-menu{
+    display: block !important;
+}
+
+.dropend > .dropdown-menu{
+    position: absolute;
+    left: 100%;
+    top: 20px;
+}
+
+.nav-link.active::before{
+    width: 70% !important;
+}
+
+.navbar .nav-link{
+    position: relative;
+}
+
+.navbar .nav-link::before{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 0;
+    height: 0.2rem;
+    bottom: 0.1rem;
+    left: 8px;
+    transition: 400ms;
+}
+
+.navbar .nav-link:hover::before{
+    width: 72%;
+}
+
+.navbar button span{
+    color: white !important;
+}
+/* End Nav */
+
+
+/* Start Home */
+.home-header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home-content{
+    text-align: center;
+    color: #fff;
+}
+
+.home-content h1{
+    font-size: 72px;
+}
+
+.typing-remover::after{
+    content: "";
+    animation-name: Typingskill;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Typingskill {
+    2%{ content: "D|"; }
+    4%{ content: "De|"; }
+    6%{ content: "Dev|"; }
+    8%{ content: "Deve|"; }
+    10%{ content: "Devel|"; }
+    12%{ content: "Develo|"; }
+    14%{ content: "Develop|"; }
+    16%{ content: "Develope|"; }
+    18%{ content: "Developer|"; }
+    30%{ content: "Develope|"; }
+    32%{ content: "Develop|"; }
+    34%{ content: "Develo|"; }
+    36%{ content: "Devel|"; }
+    38%{ content: "Deve|"; }
+    40%{ content: "Dev|"; }
+    42%{ content: "De|"; }
+    44%{ content: "D|"; }
+    46%{ content: "|"; }
+    55%{ content: "D|"; }
+    58%{ content: "De|"; }
+    61%{ content: "Des|"; }
+    64%{ content: "Desi|"; }
+    67%{ content: "Desig|"; }
+    70%{ content: "Design|"; }
+    73%{ content: "Designe|"; }
+    76%{ content: "Designer|"; }
+    79%{ content: "Designe|"; }
+    82%{ content: "Design|"; }
+    85%{ content: "Desig|"; }
+    88%{ content: "Desi|"; }
+    91%{ content: "Des|"; }
+    94%{ content: "De|"; }
+    97%{ content: "D|"; }
+    100%{ content: "|";}
+}
+/* End Home */
+
+
+/* Start About */
+.About{
+    background-color: rgb(245,245,245);
+}
+
+.about-me{
+    position: relative;
+}
+
+.about-me::before{
+    content: "";
+    position: absolute;
+    width: 145px;
+    background-color: rgb(12,110,253);
+    height: 0.2rem;
+    bottom: -10px;
+    left: 0px;
+}
+/* End About */
+
+
+/* Start Services */
+.Services{
+    background-color: rgb(245,245,245);
+}
+
+.edit-servicefont{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+.line-mf{
+    width: 40px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: rgb(12,110,253);
+}
+
+.icon-circle{
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms ease-in-out;
+}
+
+.service-box:hover .icon-circle{
+    background-color: rgb(12,110,253);
+    box-shadow: 0 0 0 10px #0077ff3f;
+}
+
+.service-box:hover .self-icon{
+    color: white;
+}
+/* End Services */
+
+
+/* Start Counter */
+.Counter{
+    background-image: linear-gradient(rgba(12,110,253,0.7),rgba(12,110,253,0.7)),url(../img/counters-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    color: rgb(205,224,248);
+}
+
+.icon-circle2{
+    height: 70px;
+    width: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px rgb(205,224,248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End Counter */
+
+
+/* Start Potfolio */
+.img{
+    overflow: hidden;
+}
+
+.Portfolio-box img{
+    transition: 400ms ease-in-out;
+}
+
+.Portfolio-box:hover img{
+    transform: scale(1.2);
+}
+
+.edit-portfoliofont{
+    font-size: 50px;
+    font-weight: 700;
+}
+/* End Portfolio */
+
+
+/* Start Testimonials */
+.Testimonial{
+    background-image: linear-gradient(rgba(12,110,253,0.7),rgba(12,110,253,0.7)),url(../img/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 450px;
+    color: rgb(205,224,248);
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+}
+/* End Testimonials */
+
+
+/* Start Blog */
+.edit-Blogfont{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.width-img-blog{
+    width: 30px;
+}
+
+.post-author span{
+    transition: 800ms;
+}
+
+.post-author span:hover{
+    color: rgb(12,110,253);
+}
+
+.Blog-content h4{
+    transition: 800ms;
+}
+
+.Blog-content h4:hover{
+    color: rgb(12,110,253);
+    cursor: pointer;
+}
+/* End Blog */
+
+
+/* Start Contact */
+.Contact{
+    background-image: linear-gradient(rgba(12,110,253,0.7),rgba(12,110,253,0.7)),url(../img/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 700px;
+}
+
+.get-in{
+    position: relative;
+}
+
+.get-in::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    background-color: rgb(12,110,253);
+    height: 0.18rem;
+    bottom: -10px;
+    left: 0px;
+}
+
+.send-message{
+    position: relative;
+}
+
+.send-message::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    background-color: rgb(12,110,253);
+    height: 0.18rem;
+    left: 0;
+    bottom: -10px;
+}
+
+.icon-circle3{
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 0 4px rgb(12,110,253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+.icon-circle3:hover{
+    box-shadow: 0 0 0 4px rgba(12, 108, 253, 0.123);
+    background-color: rgb(12,110,253);
+    color: white;
+    cursor: pointer;
+}
+
+.edit-btn{
+    border: transparent;
+    background-color: rgb(12,110,253);
+    transition: 400ms;
+}
+
+.edit-btn:hover{
+    box-shadow: 0 0 0 4px rgba(12, 108, 253, 0.219);
+    background-color: rgb(41, 115, 226);
+}
+
+.tab-content2{
+    width: 150%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.form-control{
+    width: 100%;
+}
+
+.area-edit{
+    height: 110px;
+}
+/* End Contact */
+
+
+/* Start Footer */
+.Footer{
+    background-color: rgb(7, 91, 218);
+}
+/* End Footer */
