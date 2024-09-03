@@ -35,20 +35,6 @@
 }
 /* End About */
 
-
-/* Start Counter */
-@media (max-width: 768px) {
-    .Counter{
-        height: 150vh;
-    }
-}
-/* End Counter */
-@media (max-width: 768px) {
-    .Testimonial{
-        height: 100vh;
-    }
-}
-
 /* start Contact */
 @media (max-width: 768px) {
     .Contact{
